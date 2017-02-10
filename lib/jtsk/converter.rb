@@ -73,6 +73,10 @@ module JTSK
       JTSK::Wgs84Result.new(latitude, longitude)
     end
 
+    def to_jtsk(latitude, longitude)
+      wgs84_to_jtsk(latitude, longitude)
+    end
+
     protected
 
     def wgs84_to_jtsk(latitude, longitude)
